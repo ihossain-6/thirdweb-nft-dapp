@@ -64,16 +64,18 @@
 }
 
 .card {
-  background-color: #1b2129;
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 350px;
+  width: 320px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+
+.cardcontainer {
+  display: flex;
 }
 
 .card:hover,
@@ -93,6 +95,20 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.button {
+  width: 50%;
+  max-width: 200px;
+  margin-bottom: 5px;
 }
 
 .logo {
